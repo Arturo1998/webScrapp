@@ -19,7 +19,7 @@ async function run () {
               return results;
               
           })
-          const pdf = await page.pdf({ format: 'A4', });
+          const pdf = await page.pdf({ format: 'A4', path:"Example.pdf" });
           browser.close();
           return resolve(urls), pdf;
       } catch (e) {
